@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{padding: 0;
+margin: 0;}
+
+body{
+    background-color: #000000;
+    color: white;
+    
+}
+
+
+
+.img2{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: rocket 0.8s linear alternate infinite;
+}
+
+@keyframes rocket{
+    from{
+        transform: translateY(0)rotate(-45deg);
+    }
+
+    to{
+        transform: translateY(20px)rotate(-45deg);
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#00F5BC,white);
+    border-radius: 5px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.navbar h2{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #00F5BC;
+    font-size: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.items {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+.items a{
+    text-decoration: none;
+    color: white;
+}
+
+.listin{
+    display: none;
+}
+
+
+.herosec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.hero{
+    text-align: center;
+    
+
+
+}
+
+.salam{
+    color: #00F5BC;
+    font-family: sans-serif;
+}
+
+.name{
+    font-size: 110px;
+    color: white;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro{
+    color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: sans-serif;
+    
+}
+
+.socialicons{
+    padding: 1rem;
+    font-size: 40px;
+    color: lab(86.47% -61.67 13.92);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: end;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.line{
+    width: 16%;
+    height: 4px;
+    background-color: #808080;
+
+}
+
+.aboutme h6{
+    font-family:"Black Ops One", system-ui; 
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+.pic{
+    position: relative;
+    
+}
+
+.blob{
+    background-color: mediumaquamarine;
+    width: 101%;
+    height: 101%;
+    position: absolute;
+    border-radius: 15% 55% 62% 28% / 64% 33% 67% 36%;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    background-color: rgb(0, 255, 195,0.5);
+    
+    border: 2px solid rgb(0, 255, 195) ;
+    animation: rotate 15s linear infinite;
+
+}
+
+@keyframes rotate{
+    from{
+        transform:translate(-50%,-50%) rotate(0);
+    }
+
+    to{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+
+}
+
+.pic img{
+    width:100%;
+    border-radius: 15% 55% 62% 28% / 64% 33% 67% 36%;
+    
+
+}
+
+.aboutpara{
+    font-size: 17px;
+}
+
+.farhan{
+    color: oklab(86.17399999999999% -0.17039 0.03544);
+    font-weight: normal;
+}
+
+.tech{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2%;
+    margin-top: 100px;
+    
+}
+
+.tech line{
+    width: 16%;
+    height: 4px;
+    background-color: #808080;
+    
+
+}
+
+.workingtech h6{
+    font-size: 18px;
+    font-family:"Black Ops One", system-ui;
+    font-weight: lighter;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.java{
+    display: flex;
+    align-items: center;
+    background-color: rgba(54, 54, 54, 0.578);
+    width: 32%;
+    border-radius: 10px;
+    height: 50px;
+    
+}
+
+.text{
+    font-family: sans-serif;
+    margin-left: px;
+    font-size: 20px;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 30px;
+    margin-top: 80px;
+    gap: 1rem;
+}
+
+.projects line{
+    width: 16%;
+    height: 4px;
+    background-color: #808080;
+}
+
+.text h6{
+    font-size: 19px;
+    font-family:"Black Ops One", system-ui;
+    font-weight: lighter;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 80px;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+
+.nume{
+    width: 100%;
+    padding: 0.9rem;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    
+    
+}
+
+.nume:focus{
+    box-shadow: rgba(0, 255, 195, 0.12) 0px 2px 4px 0px, rgba(0, 255, 195, 0.32) 0px 2px 16px 0px;
+}
+
+button{
+    width: 103%;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: #00F5BC;
+    border: none;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px){
+    .pic{
+        width: 220%;
+    }
+    
+
+}
+
+@media (max-width:850px){
+
+    
+    
+    .java{
+        width:50%;
+    }
+}
+
+@media (max-width:700px) {
+
+    .items{
+        display: none;
+    }
+
+    .listin{
+        display: block;
+    }
+
+    .navbar h2{
+        font-size: 25px;
+    }
+
+    .hero h2{
+        font-size: 40px;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .pic {
+        width: 60%;
+    }
+
+    
+
+    
+
+}
+
+
+@media (max-width:630px){
+
+    .image img{
+        width: 30px;
+    }
+
+    .text{
+        font-size: 15px;
+    }
+   
+
+}
+
+@media (max-width:500px){
+    .java{
+        width: 50%;
+    }
+
+    .text{
+        font-size:13px ;
+    }
+
+    .image img{
+        width: 27px;
+    }
+
+    .aboutme{
+        margin-top: 0px;
+    }
+}
+
+
+@media (max-width:400px){
+    .java{
+        width: 60%;
+        height: 42px;
+    }
+    .text{
+        font-size: 11px;
+    }
+
+    .image img{
+        width: 24px;
+    }
+}
+
+@media (max-width:300px){
+    .java{
+        height: 32px;
+    }
+}
